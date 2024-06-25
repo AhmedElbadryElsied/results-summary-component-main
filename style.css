@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --Light-red: hsl(0, 100%, 70%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    --Light-slate-blue : hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue : hsla(241, 72%, 46%, 0);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* - Font size (paragraphs): 18px */
+body{
+
+font-family: "Hanken Grotesk", sans-serif;
+
+background: var(--Pale-blue);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
+
+}
+#row{
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: #Fff;
+    border-radius: 30px;
+}
+#row .great{
+    background:linear-gradient(to bottom ,var(--Light-slate-blue) ,var(--Light-royal-blue)75%);
+    text-align: center;
+    border-radius: 30px;
+}
+#row .great .heading{
+    padding: 20px 0;
+    font-size: 20px;
+    color: var(--Light-lavender);
+}
+#row .great .circle{
+    width: 150px;
+    height: 150px;
+    background: var(--Light-royal-blue);
+    margin: auto;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+}
+#row .great .circle h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: #Fff;
+    
+}
+#row .great .circle p{
+    font-size: 16px;
+    color: var(--Light-lavender);
+    
+}
+#row .great h1{
+    color: #Fff;
+    font-size: 30px;
+    margin: 20px 0;
+}
+#row .great p{
+    color: var(--Light-lavender);
+    margin-bottom: 40px;
+}
+
+#row .summery h1{
+
+
+    font-size: 20px;
+    padding: 25px 0 20px 20px;
+    margin-left: 10px;
+    color: var(--Dark-gray-blue);
+}
+#row .summery .reaction,
+#row .summery .memory,
+#row .summery .verbal,
+#row .summery .visual{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 1.5rem;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    
+}
+#row .summery .reaction div,
+#row .summery .memory div,
+#row .summery .verbal div,
+#row .summery .visual div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+#row .summery .reaction div p,
+#row .summery .memory div p,
+#row .summery .verbal div p,
+#row .summery .visual div p{
+    margin-left: 7px;
+}
+
+#row .summery .reaction{
+    background: rgba(253, 174, 174, 0.422);
+    color: var(--Light-red);
+}
+#row .summery .memory{
+    background: rgba(255, 255, 173, 0.312);
+    color: var(--Orangey-yellow);
+}
+#row .summery .verbal{
+    background: rgba(175, 255, 175, 0.189);
+    color: var(--Green-teal);
+}
+#row .summery .visual{
+    background: rgba(189, 189, 255, 0.404);
+    color: var(--Violet-blue);
+}
+#row .summery .reaction >p,
+#row .summery .memory  >p,
+#row .summery .verbal  >p,
+#row .summery .visual >p{
+ color: #000;
+ font-weight: 700;
+}
+#row .summery .reaction >p span,
+#row .summery .memory  >p span,
+#row .summery .verbal  >p span,
+#row .summery .visual >p span{
+    color:#00000056;
+    
+}
+#row .summery button {
+    display: block;
+    padding: 15px 30px;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 30px;
+    border: none;
+    background: var(--Dark-gray-blue);
+    color: #Fff;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+#row .summery button:hover{
+    background: linear-gradient(to bottom ,var(--Light-slate-blue) ,var(--Light-royal-blue)75%);
+}
+
+/* desctop */
+@media(max-width:1000px){
+    #row{
+        grid-template-columns:1fr;
+    }
+}
+/* mopile  */
+@media(max-width:650px){
+    #row{
+        grid-template-columns: 1fr;
+        width: 85%;
+        
+    }
+    #row .summery{
+        padding-bottom: 20px;
+        
+    }
+}
+
+
+
+
+
+
+
